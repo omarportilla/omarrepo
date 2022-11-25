@@ -1,0 +1,73 @@
+# Configuración del Workspace
+Opción File "save wokspace as"
+
+Icono de configuración (Piñon) -> settings
+Pestaña Workspace -> apperance -> color theme (4 opcion)
+
+
+# creación de package.json
+npm init
+
+# Librerias necesarias
+npm i cors  //Permitir acceso al Backend o negar acceso
+npm i morgan   //Es un loger de las peticiones http que hagan al backend
+npm i express //Es la que deja hacer aplicacion js en el backend
+npm i mongoose  //Libreria que permite conectarnos a mongodb
+npm i bcryptjs  //permite encriptar una contraseña
+npm i jsonwebtoken  //Entregar un token al front y analizar cuando no lo envien
+
+#Instalar extension dotenv en Visual Studio
+
+#Instalar extensiones para desarrollador
+npm i dotenv --save-dev     //Solo se utiliza mientras hacemos el codigo para poder trabajar archivos de conf
+npm i nodemon --save-dev    //Sirve para que vaya diciendo cuales son los errores
+
+#Librerias para facilitar el desarrollador
+npm i @types/cors --save-dev
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/express --save-dev
+
+# Vamos a agregar typescrip
+tsc --init
+
+# quitar comentario linea 52
+ "outDir": "./build",    //Quitar comentario en el tsconfig.json
+
+#Agregar dos scrips en el package.json
+"dev": "nodemon build/index.js",
+"build": "tsc -w"       //cuando uno va programando va diciendo error
+los adiciono en el package.json linea 7 en los scrips
+
+#Vamos a crear el cascaron de las carpetas
+carpeta src=source  //Va todo el codigo fuente
+        carpeta  configuracion
+        carpeta entidad
+        carpeta dao //voy  acceder a mongodb
+        carpeta controlador
+        carpeta esquemas
+        carpeta ruta
+        carpeta middleware    //Intermediario para que reciba el tokend
+
+se crea un archivo en src se va a llamar index.ts
+//Aca vamos a colocar el servidor
+
+Abro 4 terminale y en el powershell cambio el nombre
+build, dev, cmd, ayy
+cambio de color a cada una
+
+npm run build           //Vigia en el build
+npm run dev     //Acabamos de lanzar el backend
+
+creo archivo variables.dev de la extencion dotenv
+
+
+
+
+
+
+
+
+
+
+
